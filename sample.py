@@ -1,7 +1,7 @@
 '''
 !/usr/bin/env python
 -*-coding:utf-8-*-
-@author:ayanava_dutta,shivam_gupta
+@author:shivam_gupta,ayanava_dutta
 '''
 import streamlit as st
 import time
