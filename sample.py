@@ -28,6 +28,5 @@ if option=='Login':
         st.success("Your form has been submitted Sucessfully")
         st.balloons()
 if option=='StreamLit Documentation':
-    #st.image("Capture.PNG")
     st.markdown("""<a href="https://docs.streamlit.io/en/stable/">StreamLit Documentation</a>""", unsafe_allow_html=True,)
     
