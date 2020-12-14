@@ -1,8 +1,3 @@
-'''
-!/usr/bin/env python
--*-coding:utf-8-*-
-@author:shivam_gupta,ayanava_dutta
-'''
 import streamlit as st
 import time
 st.title("Sample SignUp UI")
@@ -23,12 +18,14 @@ if option=='Login':
     if password!="" and len(password)<8:
         st.warning('Password must contain more than 8 characters ')
         st.stop()
-
-    if st.button(label="Submit"):
-        st.success("Your form has been submitted Sucessfully")
-        st.balloons()
-        st.text("You have entered:")
-        st.text("Name: "+str(name)+'\n\n'+"Age: "+str(age)+'\n\n'+"Date of Birth: "+str(dateofbirth))
+        
+    if password!="":
+        if st.button(label="Submit"):
+            st.success("Your form has been submitted Sucessfully")
+            st.balloons()
+            st.text("You have entered:")
+            st.text("Name: "+str(name)+'\n\n'+"Age: "+str(age)+'\n\n'+"Date of Birth: "+str(dateofbirth))
+            
 if option=='StreamLit Documentation':
     st.markdown("""<a href="https://docs.streamlit.io/en/stable/">StreamLit Documentation</a>""", unsafe_allow_html=True,)
     
