@@ -20,7 +20,7 @@ if option=='Login':
     dateofbirth=col2.date_input("Date Of Birth")
     password = st.text_input("Enter Your Password",max_chars=18,type='password')
 
-    if len(password)<8:
+    if password!="" and len(password)<8:
         st.warning('Password must contain more than 8 characters ')
         st.stop()
 
